@@ -16,6 +16,10 @@ body {
     align-items: center;
 }
 
+button {
+    margin-right: 10em;
+}
+
 #grid {
     display: grid;
 }

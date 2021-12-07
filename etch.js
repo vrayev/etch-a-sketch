@@ -5,6 +5,7 @@ let currentSize = DEFAULT_SIZE;
 let currentColor = DEFAULT_COLOR;
 
 const grid = document.getElementById('grid')
+const clearBtn = document.getElementById('clear');
 
 function setupGrid(boxCount) {
     //create box grid template
@@ -19,3 +20,11 @@ function setupGrid(boxCount) {
 };
 
 setupGrid(currentSize);
+
+//reset the grid when clear btn clicked
+clearBtn.onclick = function(){
+    grid.innerText = '';
+    setupGrid(currentSize);
+};
+
+
