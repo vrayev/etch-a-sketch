@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    background-color: darkgray;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid {
+    display: grid;
+}
+
+#grid > div {
+    background-color: coral;
+    border: 1px solid darkred;
+    padding: 15px;
+    min-width: 5px;
+}
