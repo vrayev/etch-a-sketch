@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <script type="text/javascript" src="./etch.js" defer></script>
     <title>Etch-A-Sketch!</title>
 </head>
+
 <body>
-    <header>Etch-A-Sketch!</header>
-    <div id="main">
+    <header>
+        <h1>Etch-A-Sketch!</h1>
+    </header>
+    <div id='btnContainer'>
+        <div id='colorChoiceContainer'>
+            <p>Color Selector</p>
+            <input id="colorPicker" type="color" value="#333333" />
+        </div>
+        <button id='default'>Default Color</button>
+        <button id='RGB'>Color Randomizer</button>
+        <button id="eraserBtn">Eraser</button>
         <button id='clear'>Clear</button>
-        <div id="grid"></div>
     </div>
+    <div id='gridContainer'>
+        <div id="main">
+            <div id="grid" class='grid'></div>
+        </div>
+    </div>
+    <div id='sliderContainer'>
+        <p>Choose your sketch-pad size</p>
+        <div id="sizeValue" class="size-value">2 x 2</div>
+        <input id="sizeSlider" type='range' value='16' min='1' max='64' />
+    </div>
+
+    <footer class="footer">
+        <p>Created By VRayev</p>
+        <a href="https://github.com/vrayev" target="_blank">
+            <img src="./GitHub-Mark-32px.png" class="github" alt="github-logo"></img></a>
+    </footer>
 </body>
 
-<link rel="stylesheet" type="text/css" href="./style.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="./style.css" media="screen" />
+
 </html>
