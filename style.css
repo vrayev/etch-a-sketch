@@ -238,10 +238,33 @@ input[type='color']::-webkit-color-swatch {
     #main {
       flex-direction: column-reverse;
     }
+    html {
+        max-width: fit-content;
+        max-height: 100vh;
+    }
   
     .grid {
-      width: 300px;
-      height: 300px;
+      width: 350px;
+      height: 350px;
+    }
+}
+
+@media (max-width: 375px) {
+    #main {
+        max-width: 375px;
+        max-height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1{
+        margin-left: auto;
+        font-size: 2em;
+    }
+
+    #grid {
+        width: 300px;
+        height: 300px;
     }
 }
   
